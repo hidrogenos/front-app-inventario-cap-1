@@ -7,9 +7,11 @@ import { MenuItem } from 'primeng/api';
 
   template: `
     <div>
-      <p-menubar [model]="items">
+      <div style="margin-bottom: 10px;">
+        <p-menubar [model]="items">
+        </p-menubar>
+      </div>
           
-      </p-menubar>
       <router-outlet>
         </router-outlet>
     </div>

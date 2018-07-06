@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 //modules
@@ -36,9 +37,10 @@ const ROUTES: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(ROUTES),
-    primeNgModules,
     TableModule,
     SharedModule
+    ...primeNgModules,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
