@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  api_url: 'http://localhost/api-inventario/public/api/'
+  api_url: 'http://localhost/inventario-cap1/public/api/'
 };
 
 /*

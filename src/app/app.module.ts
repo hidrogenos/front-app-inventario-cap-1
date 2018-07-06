@@ -3,11 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 
 //modules
-
 import { SharedModule } from './../shared/shared.module';
-
 import { AppComponent } from './app.component';
-
 import { ButtonModule } from 'primeng/button';
 import { MenubarModule } from 'primeng/menubar';
 
@@ -16,9 +13,12 @@ const primeNgModules = [ButtonModule, MenubarModule];
 const ROUTES: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'adm-usuarios' },
   {
-    path: 'adm-usuarios',
-    loadChildren: './../usuario/usuario.module#UsuarioModule'
+    path: 'adm-usuarios', loadChildren: './../usuario/usuario.module#UsuarioModule',
+  },
+  {
+    path: 'adm-productos', loadChildren: './../producto/producto.module#ProductoModule'
   }
+  
 ];
 
 @NgModule({

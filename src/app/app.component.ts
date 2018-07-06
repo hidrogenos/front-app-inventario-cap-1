@@ -22,12 +22,9 @@ export class AppComponent {
       routerLink: 'adm-usuarios'
     },
     {
-      label: 'Edit',
-      icon: 'fa fa-fw fa-edit',
-      items: [
-        { label: 'Undo', icon: 'fa fa-fw fa-mail-forward' },
-        { label: 'Redo', icon: 'fa fa-fw fa-mail-reply' }
-      ]
+      label: 'Producto',
+      icon: 'fa fa-fw fa-user',
+      routerLink: 'adm-productos'
     },
     {
       label: 'Help',

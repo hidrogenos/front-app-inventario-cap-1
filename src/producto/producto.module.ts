@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-import { ProductosComponent} from '../producto/containers/productos/productos.component';
 
 // containers
 import * as fromContainers from './containers';
@@ -12,9 +11,8 @@ import { TableModule } from 'primeng/table';
 //RUTAS
 
 const ROUTES: Routes = [
-  { path: '', redirectTo: 'lista', pathMatch: 'full' },
-  { path: 'lista', component: fromContainers.UsuariosComponent },
-  
+  { path: '', redirectTo: 'listaproducto', pathMatch: 'full' },
+  { path: 'listaproducto', component: fromContainers.ProductosComponent }
 ];
 
 @NgModule({
@@ -22,4 +20,4 @@ const ROUTES: Routes = [
   declarations: [...fromContainers.containers],
   providers: []
 })
-export class UsuarioModule {}
+export class ProductoModule {}
