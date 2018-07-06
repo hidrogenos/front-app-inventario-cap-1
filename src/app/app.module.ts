@@ -3,7 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-
 //modules
 
 import { SharedModule } from './../shared/shared.module';
@@ -14,10 +13,7 @@ import { ButtonModule } from 'primeng/button';
 import { MenubarModule } from 'primeng/menubar';
 import { TableModule } from 'primeng/table';
 
-
 import { ProductosComponent } from '../usuario/containers/productos/productos.component';
-
-
 
 //component
 
@@ -29,7 +25,6 @@ const ROUTES: Routes = [
     path: 'adm-usuarios',
     loadChildren: './../usuario/usuario.module#UsuarioModule'
   }
-  
 ];
 
 @NgModule({
@@ -38,7 +33,7 @@ const ROUTES: Routes = [
     BrowserModule,
     RouterModule.forRoot(ROUTES),
     TableModule,
-    SharedModule
+    SharedModule,
     ...primeNgModules,
     BrowserAnimationsModule
   ],
