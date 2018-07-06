@@ -4,6 +4,7 @@ import { MenuItem } from 'primeng/api';
 @Component({
   selector: 'app-root',
   styleUrls: ['./app.component.css'],
+
   template: `
     <div>
       <p-menubar [model]="items">
@@ -22,11 +23,12 @@ export class AppComponent {
       routerLink: 'adm-usuarios'
     },
     {
-      label: 'Edit',
+      label: 'Productos',
       icon: 'fa fa-fw fa-edit',
       items: [
-        { label: 'Undo', icon: 'fa fa-fw fa-mail-forward' },
-        { label: 'Redo', icon: 'fa fa-fw fa-mail-reply' }
+        {
+          label: 'Workspace'
+        }
       ]
     },
     {

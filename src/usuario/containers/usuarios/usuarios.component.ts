@@ -5,8 +5,9 @@ import { UsuarioModel } from '../../../shared/models/usuario.model';
 @Component({
   selector: 'usuarios',
   styleUrls: ['usuarios.component.scss'],
+
   template: `
-    <p-table [value]="usuarios">
+        <p-table [value]="usuarios">
         <ng-template pTemplate="header">
             <tr>
                 <th>ID</th>
@@ -39,5 +40,8 @@ export class UsuariosComponent implements OnInit {
 
   getUsuarios() {
     return this.usuarioService.getUsuarios();
+  }
+  crearNuevoUsuario(){
+    
   }
 }
