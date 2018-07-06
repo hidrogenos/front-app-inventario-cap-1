@@ -22,4 +22,10 @@ export class UsuarioService {
       catchError((error: any) => Observable.throw(error.json()))
     );
   }
+
+  createUsuario(data: UsuarioModel): Observable<UsuarioModel> {
+    return this.http
+      .post<UsuarioModel>(`${environment.api_url}usuarios`, data)
+      .pipe(catchError((error: any) => Observable.throw(error.json())));
+  }
 }

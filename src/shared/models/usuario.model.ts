@@ -1,5 +1,5 @@
 export interface UsuarioModel {
-  id: number;
+  id?: number;
   nombre: string;
   cedula: number;
   activo: boolean;
