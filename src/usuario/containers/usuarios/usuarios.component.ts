@@ -71,7 +71,4 @@ export class UsuariosComponent implements OnInit {
   getUsuarios() {
     return this.usuarioService.getUsuarios();
   }
-  crearNuevoUsuario(){
-    
-  }
 }
